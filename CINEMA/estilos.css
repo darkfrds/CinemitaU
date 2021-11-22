@@ -1,0 +1,208 @@
+:root {
+	--rojo: #E50914;
+	--fondo: #141414;
+}
+*{
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+
+
+body{
+
+	background: var(--fondo);
+	font-family: 'Open Sans', sans-serif;
+	
+}
+
+
+input{
+  margin-top: 0.3em;
+  margin-bottom: 0.3em;
+  width: 80vh;
+  height: 40px;
+  background-color: #DBCCCE;
+}
+
+::placeholder{
+
+	color: black;
+
+}
+
+label{
+
+  font-size: 15pt;
+  color: black;
+
+}
+
+header {
+	padding: 30px 0;
+}
+
+header .contenedor {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-left: 920px;
+}
+
+header .logotipo {
+	font-family: 'Bebas Neue', cursive;
+	font-weight: normal;
+	color: var(--rojo);
+	font-size: 40px;
+	margin-left: -620px;
+	margin-top: -100px;
+}
+
+header nav a {
+	color: #AAA;
+	text-decoration: none;
+	margin-right: 20px;
+}
+
+header nav a:hover,
+header nav a.activo {
+	color: #FFF;
+}
+
+h1 {
+	font-family: 'Bebas Neue', cursive;
+	color: red;
+	font-size: 3em;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-100%);
+}
+
+h2{
+
+	color: white;
+	font-size: 3em;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-500%);
+
+}
+
+h3{
+
+	font-size: 1em;
+	color: #DBCCCE;
+
+}
+
+h5 {
+	font-family: 'Bebas Neue', cursive;
+	color: red;
+	font-size: 3em;
+	text-align: justify;
+	position: relative;
+	top: 50%;
+	left: 75%;
+	transform: translateX(-50%) translateY(-20%);
+}
+
+.rojo{
+
+	color: #DBCCCE;
+
+}
+
+.espacio{
+
+	color: #707070;
+	font-size: 0.5em;
+
+}
+
+.espacio2{
+
+	color: #141414;
+	font-size: 0.1em;
+
+}
+
+.ph-center::-webkit-input-placeholder{
+
+	text-align: center;
+
+}
+
+.contenedor {
+	width: 90%;
+	margin: auto;
+}
+
+.main-box{
+  padding: 60px 30px;
+  display: table;
+  border-radius: 12px;
+  background-color: #707070;
+  position: relative;
+  width: 500px;
+  text-align: left;
+}
+
+.main-box button{
+
+	background-color: red;
+
+}
+
+.main-box a{
+
+	color: #E73D54 ;
+
+}
+
+main-box2{
+  padding: 60px 30px;
+  display: table;
+  border-radius: 12px;
+  background-color: #707070;
+  position: relative;
+  width: 500px;
+  text-align: left;
+}
+
+.main-box2 button{
+
+	background-color: red;
+
+}
+
+.main-box a{
+
+	color: #E73D54 ;
+
+}
+
+.content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.login-field{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.title{
+  text-align: center;
+  width: 70%;
+  height: auto;
+  margin: auto;
+  position: relative;
+}

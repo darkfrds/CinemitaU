@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous"> 
+
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
+	<link href="estilos2.css" rel="stylesheet" type="text/css">
+
+	<title>ACERCA DE</title>
+</head>
+<body>
+
+	<header>
+		<div class="contenedor">
+			<h2 class="logotipo">Cinemita</h2>
+			<nav>
+				<a href="Index.html" class="activo">Inicio</a>
+				<a href="login.html">Iniciar Sesion</a>
+				<a href="listar.php">Acerca de</a>
+				<a href="usuario.html">Registrarse</a>
+				<a href="acerca_de.html">Contacto</a>
+			</nav>
+		</div>
+	</header>
+
+<style type="text/css">
+	
+	button{
+
+		color: #E50914 ;
+    	font-family:'Bebas Neue', cursive;
+    	font-size: 50px;
+    	background-color: #767070;
+    	border: 5px solid black;
+    	border-color: #722B2B;
+    	border-radius: 15px;
+    	width: 100%;
+    	box-sizing: border-box;
+
+	}
+
+	button:hover{
+
+		color: red;
+		background-color: #BC8181;
+		border: 6px solid black;
+		border-color: red;
+
+	}
+
+	form{
+
+		width: 650px;
+		margin: auto;
+		background-color: #504E4E;
+		border: 10px solid black;
+		border-color: #722B2B;
+		padding: 30px;
+		border-radius: 15px;
+
+	}
+
+	h2{
+
+		font-family:'Bebas Neue', cursive;
+    	font-size: 50px;
+    	color: #E50914;
+    	text-align: center;
+
+	}
+
+	input, textarea{
+
+		font-family: sans-serif;
+		margin-bottom: 15px;
+		width: 100%;
+		border-radius: 10px;
+		box-sizing: border-box;
+		font-size: 28px;
+		border: none;
+
+	}
+
+	textarea{
+
+		min-height: 200px;
+
+	}
+
+</style>
+
+
+<form action="POST" action="ejecut_acerca_de.php">
+
+	<h2>CONTACTO</h2>
+
+	<input type="text" name="nombre" placeholder="Nombre">
+	<input type="email" name="correo" placeholder="Correo">
+	<input type="text" name="telefono" placeholder="Telefono">
+
+	<textarea name="mensaje" placeholder="Escribe aqui tu mensaje"></textarea>
+
+	<button type="submit" name="enviar" value="Login">ENVIAR</button>
+
+</form>
+	
+</body>
+</html>

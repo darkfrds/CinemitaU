@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilos2.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
+
+  <title>PRUEBAS</title>
+</head>
+<body>
+
+  <header>
+    <div class="contenedor">
+      <h2 class="logotipo">Cinemita</h2>
+      <nav>
+        <a href="Index.html" class="activo">Inicio</a>
+        <a href="login.html">Iniciar Sesion</a>
+        <a href="usuario.html">Registrarse</a>
+        <a href="listar.php">Acerca de</a>
+        <a href="acerca_de.html">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="pelicula-principal">
+      <div class="contenedor">
+        <h3 class="titulo">VENOM</h3>
+        <p class="descripcion">
+          Después de encontrar un cuerpo anfitrión en el periodista de investigación Eddie Brock, el simbionte alienígena debe enfrentarse a un nuevo enemigo, Carnage, el alter ego del asesino en serie Cletus Kasady.
+        
+      </div>
+    
+  
+  
+<style type="text/css">
+	
+	table {
+		border: 5px solid black;
+    border-color: #722B2B;
+    padding: 16px;
+    font-size: 1.1em;
+	}
+
+	td{
+
+		color: #E50914;
+    font-family:'Bebas Neue', cursive;
+    font-size: 50px;
+
+	}
+
+	th{
+
+		color: white;
+		font-size: 20px;
+		text-align: justify;
+		padding: 16px;
+
+	}
+
+	button{
+
+		color: white;
+    font-family:'Bebas Neue', cursive;
+    font-size: 50px;
+    background-color: #767070;
+    border: 5px solid black;
+    border-color: #722B2B;
+
+	}
+
+  button:hover{
+
+    color: red;
+    background-color: #BC8181;
+    border: 6px solid black;
+    border-color: red;
+
+  }
+
+</style>
+
+<center>
+<table border="10px" align="center" ><tr>
+<td align="center" colspan="3"bgcolor="#767070">SELECCIONAR ASIENTOS</td>
+
+  <form name="form2" method="POST" action="reservas.php">
+<table width="200" align="center" bgcolor="#767070" >
+  <br><tr>
+
+    <td><div align="center"><img src="imagenes/libre.png" name="asiento0" width="100" height="100" onClick="CambiaImagen('asiento0')"><input type="hidden" name="asiento0" value="0"></div></td>
+
+    <td><div align="center"><img src="imagenes/libre.png" name="asiento1" width="100" height="100" onClick="CambiaImagen('asiento1')"><input type="hidden" name="asiento1" value="0"></div></td>
+
+    <td><div align="center"><img src="imagenes/libre.png" name="asiento2" width="100" height="100" onClick="CambiaImagen('asiento2')"><input type="hidden" name="asiento2" value="0"></div></td>
+    
+    <th>PRECIO POR ASIENTO:</th>
+
+    <th>35.000 PESOS</th>
+
+  </tr>
+  <tr>
+
+    <td><div align="center"><img src="imagenes/libre.png" name="asiento3" width="100" height="100" onClick="CambiaImagen('asiento3')"><input type="hidden" name="asiento3" value="0"></div></td>
+
+    <td><div align="center"><img src="imagenes/libre.png" name="asiento4" width="100" height="100" onClick="CambiaImagen('asiento4')"><input type="hidden" name="asiento4" value="0"></div></td>
+
+    <td><div align="center"><img src="imagenes/libre.png" name="asiento5" width="100" height="100" onClick="CambiaImagen('asiento5')"><input type="hidden" name="asiento5" value="0"></div></td>
+
+  </tr>
+    <tr>
+
+    <td><div align="center"><img src="imagenes/ocupado.png" name="asiento6" width="99" height="99" onClick="CambiaImagen('asiento6')"></div></td>
+
+    <td><div align="center"><img src="imagenes/ocupado.png" name="asiento7" width="99" height="99" onClick="CambiaImagen('asiento7')"></div></td>
+
+    <td><div align="center"><img src="imagenes/libre.png" name="asiento8" width="100" height="100" onClick="CambiaImagen('asiento8')"><input type="hidden" name="asiento8" value="0"></div></td>
+
+    <th>TOTAL:</th>
+    <th>35.000 PESOS</th>
+  
+  </tr>
+</table>
+
+
+    <div align="center">
+    <input type="hidden" name="butacas" value="9">
+      
+   </div>
+ 
+ <p align="center">
+</p>
+
+<br>
+<tr><td><button type ="submit" value="Enviar" > RESERVAR </button></td></tr>
+</form>
+</table>
+</center>
+</div>
+</main>
+
+<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+
+<SCRIPT languaje="javascript" type="text/javascript">
+  function CambiaImagen (nombre) {
+    if (document[nombre].width == "100"){
+      document[nombre].src = "imagenes/seleccionado.png";
+      document[nombre].width = "101";
+      document[nombre].height = "100"; 
+      document.form2[nombre].value=1;
+    }
+    else if (document[nombre].width == "101"){
+      document[nombre].src = "imagenes/libre.png";
+      document[nombre].width = "100";
+      document[nombre].height = "100"; 
+      document.form2[nombre].value=0;
+    }
+    else{
+      alert("El asiento está ocupado");
+    }
+  }
+</SCRIPT>
+
+</body>
+</html>
